@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/active.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="maxwidth">
+        <div class="logo"><a href="/index.html">XINMING LI</a></div>
+        <div class="nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/moments.html">The Moments of My Life</a></li>
+                <li class="active"><a href="/portfolio.html">Portfolio</a></li>
+                <li><a href="/painting.html">Chinese Painting</a></li>
+                <li><a href="/vex.html">VEX Robotics</a></li>
+                <li><a href="javascript:;">Application & Essay</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="center">
+    <div class="banner"><img src="images/portfolio/banner.jpg"></div>
+    <div class="portfolio">
+        <div class="title">Sertar--Architecture Development</div>
+        <div class="portfolio_img"><img src="images/portfolio/small/small1.jpg" data-large="images/portfolio/large/large1.jpg"></div>
+        <div class="portfolio_img"><img src="images/portfolio/small/small2.jpg" data-large="images/portfolio/large/large2.jpg"></div>
+        <div class="portfolio_img"><img src="images/portfolio/small/small3.jpg" data-large="images/portfolio/large/large3.jpg"></div>
+        <div class="title">Community Activity Center for the Elderly</div>
+        <div class="portfolio_img"><img src="images/portfolio/small/small4.jpg" data-large="images/portfolio/large/large4.jpg"></div>
+        <div class="portfolio_img"><img src="images/portfolio/small/small5.jpg" data-large="images/portfolio/large/large5.jpg"></div>
+        <div class="portfolio_img"><img src="images/portfolio/small/small6.jpg" data-large="images/portfolio/large/large6.jpg"></div>
+        <div class="title">Butterfly Movenment Texturer Micostructure and Architecture</div>
+        <div class="portfolio_img"><img src="images/portfolio/small/small7.jpg" data-large="images/portfolio/large/large7.jpg"></div>
+        <div class="portfolio_img" style="background: #f39800"><img src="images/portfolio/small/small8.jpg" data-large="images/portfolio/large/large8.jpg"></div>
+        <div class="portfolio_img"><img src="images/portfolio/small/small9.jpg" data-large="images/portfolio/large/large9.jpg"></div>
+        <div class="title">Panda Information Office</div>
+        <div class="portfolio_img"><img src="images/portfolio/small/small10.jpg" data-large="images/portfolio/large/large10.jpg"></div>
+        <div class="title">Other Project</div>
+        <div class="portfolio_img"><img src="images/portfolio/small/small11.jpg" data-large="images/portfolio/large/large11.jpg"></div>
+        <div class="title">Other Works</div>
+        <div class="portfolio_img"><img src="images/portfolio/small/small12.jpg" data-large="images/portfolio/large/large12.jpg"></div>
+        <div class="portfolio_img"><img src="images/portfolio/small/small13.jpg" data-large="images/portfolio/large/large13.jpg"></div>
+        <div class="portfolio_img"><img src="images/portfolio/small/small14.jpg" data-large="images/portfolio/large/large14.jpg"></div>
+    </div>
+    <script>
+        $(function(){
+            $(".portfolio_img").click(function(){
+                $(".show_img").show();
+                $(".large_img").attr("src",$(this).find("img").attr("data-large"));
+                $("body").css("overflow","hidden")
+            })
+            $(".large_close").click(function(){
+                $(".show_img").hide();
+                $("body").css("overflow","auto")
+            })
+        })
+    </script>
+</div>
+<div class="footer">
+    <p>E-mail : michael2001122@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tel : +1(949)527-2582</p>
+    <p>© 2019 XinMing Li.   All Rights Reserved.</p>
+</div>
+<div class="show_img">
+    <div class="large">
+        <img class="large_img" src="">
+        <img class="large_close" src="images/close.png">
+    </div>
+</div>
+</body>
+</html>
