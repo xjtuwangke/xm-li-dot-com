@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application & Essay</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/active.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="maxwidth">
+        <div class="logo"><a href="/index.html">XINMING LI</a></div>
+        <div class="nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/moments.html">The Moments of My Life</a></li>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+                <li><a href="/painting.html">Chinese Painting</a></li>
+                <li><a href="/vex.html">VEX Robotics</a></li>
+                <li class="active"><a href="/application.html">Application & Essay</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="center">
+    <div class="banner"><img src="images/essay.jpg"></div>
+    <div class="portfolio">
+        <div class="title">Common Essay | Prompt 7 | Xinming Li</div>
+        <div class="content">
+            <div class="maxwidth" style="margin-bottom:50px;">
+                <P>In the traditional sense, I might not be an all A student. But in my own definition, I can say with confidence that I am the only one of my kind. If every person is represented by a color, which can identify one’s personality, interests and goals, then my color is turquoise. I have the intuitional and creative mind of green, and I also have the analytical, science-oriented mind of blue. Being nurtured with an inclusive family education, I grow into an individual with acquired passion to Chinese traditional painting and robotics. The first teaches me the traditional cultural formality, while the latter inspires me to seek truths with technology.</P>
+                <P>I grow up with a philosophy to share. At the age of 7, I began pouring my attention into Chinese painting and started my journey to be a painter who, up to his 18s, has received multiple international-level prizes and has many of his art works exhibited in influential art shows. I felt in love with painting because putting my emotions about the world in the paper is much easier than talking about them with others. Embracing an ambition to promote Chinese painting worldwide, I have been keeping an eye on sharing my experiences and in April 2019 I was fortunately invited, by the North America Chinese Cultural Foundation, to MIT and Harvard University to give speeches introducing Chinese painting and its dissimilarity with Western culture. I call the sharing of passion for Chinese painting the heritage of a contributive spirit which empowers me to offer more to help the world know how China develops in the pictures of painters. My mind of green is the seed to all these accomplishments.</P>
+                <P>Speaking of the blue mind, I think the highlight should be the robotics competition. Inprimary school I was introduced to the VEX Robotics and quickly I obtained a deep understanding of it. At the age of 11, I won the 2012 World VEX Robotics Build Award and was recognized to be a talent in this field. In 2017, I secured the second place in VEX Robotics California State Championship and the Design Award. My confidence soared andwith it I intended to let more children in mountain areas get familiar with this intriguing subject. I was voted to be the president of the Chinese Intercultural Association Youth Club and established the American Mountain Bluebird VEX Club. It takes pain for a boy to take such a big job but never did I fear the hardships. Constantly I arranged activities in high schools in Chengdu City to teach students about the VEX. Expensive the equipment was, I and my fellows came up with ideas to raise funds from the public. In 2018, being motivated to expand the influence of my clubs in the US, I led my team to open VEX classes in Irvine Communities. In one year, we taught over 500 students the knowledge about VEX robotics.The more I offer, the more I was offered and offering makes me feel happy.</P>
+                <P>In the foreseeing future, I know whom I want to be. I want to be the one your school feels proud of; I want to continue with my sharing of painting and VEX experiences worldwide; I want to dive deeper in the field of art and technology and seek to more innovatively combine the two; I want, if possible, my name to be known by more children who hold their passions and would like to share.</P>
+                <P>Fulfillment of above wishes requires me to continue my exploration in the US, a land where innovation thrives. For me, turquoise is the spirit of enjoying two parts of life: the free, adventurous, curious Green and the strict, logical, serious Blue. Living and studying in the US for 5 years, I am well prepared physically and mentally and always be ready to take the next step.</P>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $(".portfolio_img").click(function(){
+                $(".show_img").show();
+                $(".large_img").attr("src",$(this).find("img").attr("data-large"));
+                $("body").css("overflow","hidden")
+            })
+            $(".large_close").click(function(){
+                $(".show_img").hide();
+                $("body").css("overflow","auto")
+            })
+        })
+    </script>
+</div>
+<div class="footer">
+    <p>E-mail : michael2001122@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tel : +1(949)527-2582</p>
+    <p>© 2019 XinMing Li.   All Rights Reserved.</p>
+</div>
+<div class="show_img">
+    <div class="large">
+        <img class="large_img" src="">
+        <img class="large_close" src="images/close.png">
+    </div>
+</div>
+</body>
+</html>
